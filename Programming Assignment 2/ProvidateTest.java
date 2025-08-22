@@ -9,9 +9,6 @@ public class ProvidateTest {
         System.out.println("Swarm:\t" + o.swarm("elucidate"));
         System.out.println("Follow:\t" + o.follow("bed", "slug"));
         System.out.println("Cabin:\t" + o.cabin("la", 10));
-
-        int[] toneResult = new int[9];
-        toneResult = o.tone(9);;
-        System.out.println("Tone:\t" + Arrays.toString(toneResult));
+        System.out.println("Tone:\t" + Arrays.toString(o.tone(9)));
     }
 }

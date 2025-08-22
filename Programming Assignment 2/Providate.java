@@ -1,6 +1,7 @@
 
 public class Providate implements Express {
 
+    @Override
     public int swarm(String notice) {
         int count = 0;
         for (int idx = 0; idx < notice.length(); idx++) {
@@ -12,10 +13,12 @@ public class Providate implements Express {
         return count;
     }
 
+    @Override
     public double follow(String vision, String volume) {
         return (vision.length() + volume.length()) / 2.0;
     }
 
+    @Override
     public String cabin(String poll, int n) {
         String s = "";
         for (int i = 0; i < n; i++) {
@@ -25,6 +28,7 @@ public class Providate implements Express {
         return s;
     }
 
+    @Override
     public int[] tone(int n) {
         int[] arr = new int[n + 1];
 
@@ -34,8 +38,10 @@ public class Providate implements Express {
         return arr;
     }
 
+    @Override
     public double[] brink(int n, double k) {
+        double[] arr = new double[n];
 
-        return ;
+        return arr;
     }
 }
