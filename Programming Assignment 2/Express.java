@@ -9,9 +9,9 @@ public interface Express {
 
     int[] tone(int n);
 
-    // Return an array of length n with each element equal to k.
     double[] brink(int n, double k);
+
     /* Return an array of length n where each element contains 
        at least one letter and no two elements are the same. */
-    //  String[] mark(int n);
+    String[] mark(int n);
 }

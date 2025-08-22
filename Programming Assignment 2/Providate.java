@@ -44,7 +44,15 @@ public class Providate implements Express {
 
         for (int idx = 0; idx < arr.length; idx++) {
             arr[idx] = k;
+        }
+        return arr;
+    }
 
+    @Override
+    public String[] mark(int n) {
+        String[] arr = new String[n];
+        for (int idx = 0; idx < arr.length; idx++) {
+            arr[idx] = "a" + idx;
         }
         return arr;
     }
