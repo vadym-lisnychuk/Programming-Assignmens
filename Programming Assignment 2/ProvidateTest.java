@@ -10,5 +10,6 @@ public class ProvidateTest {
         System.out.println("Follow:\t" + o.follow("bed", "slug"));
         System.out.println("Cabin:\t" + o.cabin("la", 10));
         System.out.println("Tone:\t" + Arrays.toString(o.tone(9)));
+        System.out.println("Brink:\t" + Arrays.toString(o.brink(34, 19.57)));
     }
 }

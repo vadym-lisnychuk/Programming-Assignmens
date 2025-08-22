@@ -42,6 +42,10 @@ public class Providate implements Express {
     public double[] brink(int n, double k) {
         double[] arr = new double[n];
 
+        for (int idx = 0; idx < arr.length; idx++) {
+            arr[idx] = k;
+
+        }
         return arr;
     }
 }
