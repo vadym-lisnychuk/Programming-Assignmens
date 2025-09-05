@@ -54,5 +54,15 @@ public class Supply {
             return "Cat: " + cat + "\n" + "Awl: " + awl;
         }
 
+        public static <E extends Comparable<E>> E findLargest(E[] arr){
+            E largest = arr[0];
+
+            for (E elem : arr) {
+                if(elem.compareTo(largest) > 0)
+                    largest = elem;
+            }
+
+            return largest;
+        }
     }
 }
