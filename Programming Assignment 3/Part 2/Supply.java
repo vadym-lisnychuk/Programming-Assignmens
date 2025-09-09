@@ -1,68 +1,67 @@
 public class Supply {
-    private int vertical;
+    int vertical;
 
     public Supply(int vertical) {
         this.vertical = vertical;
     }
 
     public int getVertical() {
-        return vertical;
+        return this.vertical;
+    }
+
+    public static <E extends Comparable> E findLargest(E[] arr) {
+        E largerst = arr[0];
+
+        for (E elem : arr)
+            if (largerst.compareTo(elem) < 0)
+                largerst = elem;
+
+        return largerst;
     }
 
     static class Facade {
-        private int bat;
-        private int fix;
+        int bat;
+        int fix;
 
         Facade(int bat, int fix) {
             this.bat = bat;
             this.fix = fix;
         }
 
-        public int getBat() {
-            return bat;
+        int getBat() {
+            return this.bat;
         }
 
-        public int getFix() {
-            return fix;
+        int getFix() {
+            return this.fix;
         }
 
         @Override
         public String toString() {
-            return "Bat: " + bat + "\n" + "Fix: " + fix;
+            return "bat: " + bat + "\tfix: " + fix;
         }
     }
 
-    class Claim {
-        private int cat;
-        private int awl;
+    protected class Claim {
+        int cat;
+        int awl;
 
         public Claim(int cat, int awl) {
             this.cat = cat;
             this.awl = awl;
         }
 
-        public int getCat() {
-            return cat;
+        int getCat() {
+            return this.cat;
         }
 
-        public int getAwl() {
-            return awl;
+        int getAwl() {
+            return this.awl;
         }
 
         @Override
         public String toString() {
-            return "Cat: " + cat + "\n" + "Awl: " + awl;
-        }
-
-        public static <E extends Comparable<E>> E findLargest(E[] arr){
-            E largest = arr[0];
-
-            for (E elem : arr) {
-                if(elem.compareTo(largest) > 0)
-                    largest = elem;
-            }
-
-            return largest;
+            return "cat: " + cat + "\tAWL: " + awl;
         }
     }
 }
